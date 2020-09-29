@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,15 @@ namespace AnagraficApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        ElencoStudenti studenti = new ElencoStudenti();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnInserisci_Click(object sender, RoutedEventArgs e)
+        {
+            studenti.scrivi("C:/Users/Utente/Documents/GitHub/Anagrafica-Repo/AnagraficApp");
         }
     }
 }

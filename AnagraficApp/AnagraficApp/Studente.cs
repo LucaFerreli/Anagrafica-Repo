@@ -24,5 +24,29 @@ namespace AnagraficApp
             this.codiceFiscale = codiceFiscale;
             this.classe = classe;
         }
+        public string getNome()
+        {
+            return nome;
+        }
+        public string getCognome()
+        {
+            return cognome;
+        }
+        public string getLuogoNascita()
+        {
+            return luogoNascita;
+        }
+        public DateTime getDataNascita()
+        {
+            return dataNascita;
+        }
+        public string getCodiceFiscale()
+        {
+            return codiceFiscale;
+        }
+        public string getClasse()
+        {
+            return classe;
+        }
     }
 }
