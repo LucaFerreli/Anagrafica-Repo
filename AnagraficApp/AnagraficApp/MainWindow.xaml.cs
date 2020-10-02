@@ -29,7 +29,7 @@ namespace AnagraficApp
 
         private void btnInserisci_Click(object sender, RoutedEventArgs e)
         {
-            studenti.scrivi("C:/Users/Utente/Documents/GitHub/Anagrafica-Repo/AnagraficApp");
+            studenti.scrivi("Elenco studenti");
         }
     }
 }

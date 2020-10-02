@@ -24,7 +24,7 @@ namespace AnagraficApp
         }
         public void scrivi(string percorso)
         {
-            FileStream flusso = new FileStream(percorso, FileMode.CreateNew, FileAccess.Write);
+            FileStream flusso = new FileStream(percorso, FileMode.Append, FileAccess.Write);
             StreamWriter writer = new StreamWriter(flusso);
             foreach (Studente s in studenti)
             {
